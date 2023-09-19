@@ -4,8 +4,12 @@ import asyncio
 import json
 import websockets
 import requests
+import os.path
 
 col1, col2, col3, col4 = st.columns([1.5, 2, 2, 2], gap="small")
+if os.path.exists("dt.json") == False:
+    with open('dt.json', 'w') as f:
+        f.write('{"birg": "Binance", "val": "BTC"}')
 
 def read_json():
     with open('dt.json', 'r') as f:
