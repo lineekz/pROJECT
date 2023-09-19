@@ -27,7 +27,7 @@ birg, val = read_json()
 with st.sidebar:
     c1, c2, c3 = st.columns(3)
     with c1:
-        img = Image.open("bitcoin.png")
+        img = Image.open("project/bitcoin.png")
         st.image(img)
         click_BTC = st.button("BTC/USD")
         if click_BTC:
