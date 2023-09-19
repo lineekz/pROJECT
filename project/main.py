@@ -34,7 +34,7 @@ with st.sidebar:
             write_json(birg, "BTC")
             st.experimental_rerun()
         st.divider()
-        img = Image.open("coin.png")
+        img = Image.open("project/coin.png")
         st.image(img)
         click_SOL = st.button("SOL/USD")
         if click_SOL:
@@ -42,7 +42,7 @@ with st.sidebar:
             st.experimental_rerun()
 
     with c2:
-        img = Image.open("ethereum(1).png")
+        img = Image.open("project/ethereum(1).png")
         st.image(img)
         click_ETH = st.button("ETH/USD")
         if click_ETH:
@@ -50,7 +50,7 @@ with st.sidebar:
             st.experimental_rerun()
         st.divider()
 
-        img = Image.open("bnb.png")
+        img = Image.open("project/bnb.png")
         st.image(img)
         click_BNB = st.button("BNB/USD")
         if click_BNB:
@@ -58,7 +58,7 @@ with st.sidebar:
             st.experimental_rerun()
 
     with c3:
-        img = Image.open("litecoin.png")
+        img = Image.open("project/litecoin.png")
         st.image(img)
         click_LTC = st.button("LTC/USD")
         if click_LTC:
@@ -66,23 +66,23 @@ with st.sidebar:
             st.experimental_rerun()
         st.divider()
 
-        img = Image.open("currency.png")
+        img = Image.open("project/currency.png")
         st.image(img)
         click_XRP = st.button("ADA/USD")
         if click_XRP:
             write_json(birg, "ADA")
             st.experimental_rerun()
 
-    with col2:
-        img = Image.open("binance.png")
-        st.image(img)
-        click = st.button("Binance")
-        if click:
-            write_json("Binance", val)
-            st.experimental_rerun()
+with col2:
+    img = Image.open("project/binance.png")
+    st.image(img)
+    click = st.button("Binance")
+    if click:
+        write_json("Binance", val)
+        st.experimental_rerun()
 
 with col4:
-    img2 = Image.open("bybit.png")
+    img2 = Image.open("project/bybit.png")
     st.image(img2)
     click2 = st.button("Bybit")
     if click2:
@@ -90,7 +90,7 @@ with col4:
         st.experimental_rerun()
 
 with col3:
-    img1 = Image.open("Kucoin.png")
+    img1 = Image.open("project/Kucoin.png")
     st.image(img1)
     click1 = st.button("Kucoin")
     if click1:
